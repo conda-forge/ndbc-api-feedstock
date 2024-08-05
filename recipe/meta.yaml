@@ -1,6 +1,7 @@
 {% set name = "ndbc-api" %}
 {% set version = "0.24.8.4.1" %}
 
+
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -8,6 +9,7 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ndbc_api-{{ version }}.tar.gz
   sha256: 0411b2c5441000b8a2b43fe902432dcf4c500f8799f2250e539de55ba0a8efff
+
 
 build:
   noarch: python
@@ -18,12 +20,13 @@ requirements:
   host:
     - python >=3.7
     - pip
+    - poetry
   run:
     - python >=3.7
     - requests
     - pandas
     - beautifulsoup4
-    - html5lib
+    - urllib3
 
 test:
   imports:
