@@ -18,11 +18,11 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.7,<3.13
     - pip
     - poetry
   run:
-    - python >=3.7
+    - python >=3.7,<3.13
     - requests
     - pandas
     - beautifulsoup4
