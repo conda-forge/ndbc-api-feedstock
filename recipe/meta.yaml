@@ -1,5 +1,5 @@
 {% set name = "ndbc-api" %}
-{% set version = "0.24.10.15.1" %}
+{% set version = "0.24.11.17.1" %}
 
 
 package:
@@ -27,7 +27,8 @@ requirements:
     - pandas
     - beautifulsoup4
     - urllib3
-    - netcdf4
+    - xarray
+    - scipy
 
 test:
   imports:
