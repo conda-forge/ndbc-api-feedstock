@@ -1,5 +1,5 @@
 {% set name = "ndbc-api" %}
-{% set version = "0.24.12.02.1" %}
+{% set version = "0.24.12.2.1" %}
 
 
 package:
