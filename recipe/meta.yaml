@@ -7,22 +7,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ndbc_api-{{ version }}.tar.gz
-  sha256: 6d348bbf3d109a99b27117486dbb622adef6dc0d6e32dcc2e71e6a1e9112837b
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ndbc_api-{{ version }}.tar.gz
+  sha256: 28be2a3a45cf9355e9d38a60530193cdbd9aa30bce11da9ae99620554f722b2b
 
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.7,<3.13
+    - python {{ python_min }}
     - pip
     - poetry
   run:
-    - python >=3.7,<3.13
+    - python >={{ python_min }},<3.13
     - requests
     - pandas
     - beautifulsoup4
@@ -32,6 +32,8 @@ requirements:
     - h5netcdf
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - ndbc_api
 
