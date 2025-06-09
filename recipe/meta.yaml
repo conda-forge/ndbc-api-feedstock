@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ndbc_api-{{ version }}.tar.gz
-  sha256: 28be2a3a45cf9355e9d38a60530193cdbd9aa30bce11da9ae99620554f722b2b
+  sha256: c3a25a3f357dd3e733fa0e5a3922e23c19daaa64ba59a5264aa67ed8566317a7
 
 
 build:
@@ -29,6 +29,7 @@ requirements:
     - urllib3
     - xarray
     - scipy
+    - h5netcdf
 
 test:
   requires:
