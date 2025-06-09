@@ -1,5 +1,5 @@
 {% set name = "ndbc-api" %}
-{% set version = "0.24.11.17.1" %}
+{% set version = "0.25.06.06.1" %}
 
 
 package:
@@ -29,6 +29,7 @@ requirements:
     - urllib3
     - xarray
     - scipy
+    - h5netcdf
 
 test:
   imports:
