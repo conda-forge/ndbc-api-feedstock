@@ -1,5 +1,5 @@
 {% set name = "ndbc-api" %}
-{% set version = "0.25.10.26.1" %}
+{% set version = "0.25.10.28.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ndbc_api-{{ version }}.tar.gz
-  sha256: 730883778d04c04cf7adeb1593e061d62431a24ef9a78c7478e0e1b78f3db355
+  sha256: 0c12fbd7a782bbd6fe48c5e39c2f49a1de4af8eb21d87638738340ec87b487e0
 
 
 build:
